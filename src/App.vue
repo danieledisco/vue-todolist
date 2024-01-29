@@ -7,7 +7,7 @@ export default {
         [
           {
             text: 'Acquistare Pane',
-            done: false
+            done: true
           }
           ,
           {
@@ -25,6 +25,17 @@ export default {
 }
 </script>
 
-<template></template>
+<template>
+  <ul>
+    <h1>Lista ToDo</h1>
+    <li v-for="task in toDoList">
+      <span :style="{ textDecoration: task.done ? 'line-through' : '' }">
+        {{ task.text }}
+      </span>
+
+
+    </li>
+  </ul>
+</template>
 
 <style></style>
