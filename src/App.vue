@@ -48,4 +48,9 @@ export default {
   </ul>
 </template>
 
-<style></style>
+<style>
+i {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+</style>

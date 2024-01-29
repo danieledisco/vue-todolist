@@ -10,3 +10,7 @@ Stampare all'interno di una lista HTML un item per ogni todo. Se la proprietà d
 
 ## MILESTONE 2
 Visualizzare a fianco ad ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista.
+
+
+# NOTA 
+In index.html è stato aggiunto il link a font-awesome per usare l'icona della croce nel cerchio
