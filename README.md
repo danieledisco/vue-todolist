@@ -9,4 +9,4 @@ Fare l'esercizio della to do list per ogni todo avremo un oggetto, formato da du
 Stampare all'interno di una lista HTML un item per ogni todo. Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato
 
 ## MILESTONE 2
-Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
+Visualizzare a fianco ad ogni item una "x": cliccando su di essa, il todo viene rimosso dalla lista.

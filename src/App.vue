@@ -21,6 +21,12 @@ export default {
           }
         ]
     }
+  },
+  methods: {
+    removeTask(index) {
+      console.log('Remove task', index);
+      this.toDoList.splice(index, 1);
+    }
   }
 }
 </script>
@@ -28,9 +34,13 @@ export default {
 <template>
   <ul>
     <h1>Lista ToDo</h1>
-    <li v-for="task in toDoList">
+    <li v-for="(task, index) in toDoList">
       <span :style="{ textDecoration: task.done ? 'line-through' : '' }">
         {{ task.text }}
+      </span>
+
+      <span @click="removeTask(index)">
+        <i class="fa-regular fa-circle-xmark"></i>
       </span>
 
 
