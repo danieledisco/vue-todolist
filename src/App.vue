@@ -54,7 +54,7 @@ export default
 <template>
   <h1>Lista ToDo</h1>
   <span calss="inputgrup">
-    <input type="text" v-model="newTask">
+    <input type="text" v-model="newTask" @keyup.enter="addTask()">
     <button @click="addTask">Aggiungi compito</button>
   </span>
   <br>
