@@ -46,6 +46,10 @@ export default
         else {
           this.error = 'Il compito deve essere lungo almeno 5 caratteri'
         }
+      },
+      doneUndone(index) {
+        console.log('Cliccato su item');
+        this.toDoList[index].done = !this.toDoList[index].done;
       }
     }
   }
@@ -65,7 +69,7 @@ export default
   </span>
   <ul>
     <li v-for="(task, index) in toDoList">
-      <span :style="{ textDecoration: task.done ? 'line-through' : '' }">
+      <span :style="{ textDecoration: task.done ? 'line-through' : '' }" @click="doneUndone(index)">
         {{ task.text }}
       </span>
 
